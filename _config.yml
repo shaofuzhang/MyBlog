@@ -3,16 +3,16 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Hexo
+title: SF Zhang 的博客
 subtitle:
-description:
-author: John Doe
+description: 张少甫的博客
+author: SF Zhang
 language:
 timezone:
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: http://yoursite.com
+url: http://www.zhangshaofu.cn/
 root: /
 permalink: :year/:month/:day/:title/
 permalink_defaults:

@@ -39,5 +39,4 @@ print(res)
 import sys
 print(sys.getrecursionlimit())
 ```
-可见默认次数1000，也可通过
-[`setrecursionlimit()`](https://docs.python.org/3.4/library/sys.html#sys.setrecursionlimit "sys.setrecursionlimit")去修改默认的次数限制。
+可见默认次数1000，也可通过[`setrecursionlimit()`](https://docs.python.org/3.4/library/sys.html#sys.setrecursionlimit "sys.setrecursionlimit")去修改默认的次数限制。

@@ -2,7 +2,7 @@
 
 menu:
   主页: /
-  随笔: /python
+  随笔: /tags/python
 
 # SubNav
 subnav:
@@ -62,6 +62,9 @@ toc_empty_wording: '目录，不存在的…'
 # 是否有快速回到顶部的按钮
 top: true
 
+# 是否在新窗口打开链接
+open_in_new: true
+
 # Miscellaneous
 baidu_analytics: ''
 google_analytics: ''
@@ -116,7 +119,7 @@ slider:
 #  friends: false
 smart_menu:
   innerArchive: '所有文章'
-  friends: '友链'
+  friends: false
   aboutme: '关于我'
 
 friends:

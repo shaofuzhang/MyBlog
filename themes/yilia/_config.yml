@@ -2,8 +2,7 @@
 
 menu:
   主页: /
-  随笔: /python
-  所有文章: /archives
+  随笔: /categories/随笔
 
 # SubNav
 subnav:

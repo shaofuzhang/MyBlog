@@ -1,6 +1,6 @@
 ---
 title: Nginx运行Hexo
-date: 2018-02-03 16:57:49
+date: 2018-02-06 20:57:49
 tags: 写作 
 categories: Hexo
 ---

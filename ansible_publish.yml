@@ -1,0 +1,8 @@
+#
+---
+  - hosts: blog
+    tasks:
+      - name: update repostory
+        command: ./publish.sh
+        args:
+          chdir: /root/MyBlog/

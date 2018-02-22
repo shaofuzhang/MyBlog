@@ -5,6 +5,9 @@ tags: 写作
 categories: Hexo
 ---
 
+
+![Aaron Swartz](https://raw.githubusercontent.com/smshen/MarkdownPhotos/master/Res/test.jpg)
+
 ![test](http://p4djts42a.bkt.clouddn.com/http%E5%B1%82%E5%88%86%E5%B8%83.png)
 
 

@@ -4,6 +4,10 @@ date: 2018-02-03 16:57:49
 tags: 写作 
 categories: Hexo
 ---
+
+![test](http://p4djts42a.bkt.clouddn.com/http%E5%B1%82%E5%88%86%E5%B8%83.png)
+
+
 由于想上传图片，但是云存储尚未申请下来，此篇博客暂时不更。烂尾。
 yilia 一个简洁优雅的hexo主题。在应用过程中，发现github主页上的使用说明比较简陋且不完整，踩了几个坑，故此记录下。在看此文之前，请确保已经能给运行Hexo server。如果还没能运行，可以参考[Hexo官方文档](https://hexo.io/zh-cn/docs/)
 

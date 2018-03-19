@@ -9,7 +9,7 @@ categories: Python
 
 ## 为什么要用python3？
 
-在2018年日，Python之父在开发者邮箱回复说，Python2.7的EOL日期是2020年1月1日，之后不会再有任何更新，包括源码的安全补丁。
+Sat Mar 10 20:54:35 EST 2018，Python之父在开发者邮箱回复说，Python2.7的EOL日期是2020年1月1日，之后不会再有任何更新，包括源码的安全补丁。
 
 在来看看众所周知的Django怎么说，
 Since newer versions of Python are often faster, have more features, and are better supported, the latest version of Python 3 is recommended.

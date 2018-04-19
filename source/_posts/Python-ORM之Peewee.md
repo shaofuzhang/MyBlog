@@ -11,11 +11,12 @@ Peewee是python下一个轻量级的ORM框架，支持SQLite,MySQL,Postgresql,�
 
 ## 消失的 RetryOperationalError
 
-经常遇到有使用者问，我在什么CSDN、什么知乎看到 ``` from playhouse.shortcuts import RetryOperationalError```,可我引用乃至看源码的时候并没看到这个呢？
+经常遇到有使用者问，我在什么CSDN、什么知乎看到 from playhouse.shortcuts import RetryOperationalError ,可我引用乃至看源码的时候并没看到这个呢？
 
 Peewee 3.0就把RetryOperationalError移除了。
 
 一起看看作者怎么说的：
+
 ```
 The code should work with a few modifications...the signature for execute_sql() is slightly different. exception_wrapper is now __exception_wrapper__. get_cursor() is just cursor()...
 

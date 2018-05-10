@@ -98,3 +98,8 @@ with open(dst + '/cfg.json', 'wb') as f:
 把上面的坑解决后，项目就正常运行了。有如此方便的神器，还有那么多新的特性，还不赶快把项目升级到python3？
 
 人生苦短，我用python3
+
+Update：
+## six
+Six is a Python 2 and 3 compatibility library. It provides utility functions for smoothing over the differences between the Python versions with the goal of writing Python code that is compatible on both Python versions. 
+近期知道six这个第三方包也是同样的功能，有兴趣的可以试一试。

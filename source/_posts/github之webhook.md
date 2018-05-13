@@ -72,8 +72,10 @@ if __name__ == '__main__':
 ```
 
 ## 二、创建一个publis.sh
+
 web server 拿到post请求后执行这个脚本。
-```
+
+```bash
 #!/bin/bash
 
 git pull

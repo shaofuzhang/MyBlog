@@ -12,8 +12,10 @@ Webhooks allow external services to be notified when certain events happen. When
 可以看出，我们创建一个webhooks，然后创建一个可以接受post请求的web服务，服务器执行脚本就可以完成这个过程。
 
 # 一、先用Flask写个最简单server
+
 很多冗余代码，其实只要能接收Post请求就行。
-```
+
+```Python
 import os
 import logging
 from flask import Flask
@@ -91,3 +93,4 @@ Payload URL:必须是指向web server的公网地址，其余的都默认。
 ## 校验
 
 代码每次push的时候，github都会发起一次post请求到web server，然后执行脚本，自动化发布就完成了。
+本人的阿里云服务器和github通信经常不稳定，所以在server上又加了一个deploy路由，我们可以半自动的去发布。

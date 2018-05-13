@@ -40,9 +40,10 @@ def create_app():
 app = create_app()
 
 
-@app.route('/')
+@app.route('/', methods=['POST'])
 def index():
-    sh_path = os.path.join(app.root_path[:app.root_path.rfind('/')], "publish.sh")
+    sh_path = os.path.join(app.root_path[:app.root_path.rfind('/')],
+                           "publish.sh")
     logging.info("accept request. path:" + sh_path)
     os.system(sh_path)
     return "ok"

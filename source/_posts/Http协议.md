@@ -1,8 +1,8 @@
 ---
 title: 图解Http阅读笔记
 date: 2018-02-03 16:57:49
-tags: http
-categories: 笔记
+tags: 写作
+categories: http
 ---
 
 ## TCP/IP 协议

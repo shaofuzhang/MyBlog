@@ -33,7 +33,7 @@ linux和mac下可以直接使用。基础的用法可以点击链接查看官�
 
 文章中介绍了几种使用方法，我们使用文件夹转换的方式，命令如下
 
-```
+```bash
 2to3 --output-dir=python3-version/mycode -W -n python2-version/mycode
 ```
 
@@ -42,7 +42,7 @@ linux和mac下可以直接使用。基础的用法可以点击链接查看官�
 本人把近2G的Flask正式项目做了一次转换，特别注意项目包含静态文件，在转换的时候要注意排除，以及env等文件夹也要绕过。
 转换过程中terminal打印的一些信息：
 
-```
+```python
 # has_key转为in
 @@ -405,7 +405,7 @@
  def sort_by_data(data_obj, desc=False):
@@ -78,7 +78,8 @@ linux和mac下可以直接使用。基础的用法可以点击链接查看官�
 1.python3.5和低版本的xlwt不兼容，所以有用到这个包且版本较低的话需要升级到最新。目前最新的1.3.0
 
 2.email模块的调整
-```
+
+```python
 from email.mime.multipart import MIMEMultipart  # import MIMEMultipart
 from email.mime.text import MIMEText  # import MIMEText
 from email.mime.base import MIMEBase  # import MIMEBase
@@ -89,7 +90,8 @@ filename=('gbk', '', file_name)
 
 3.write函数
 参数必须是bytes类型
-```
+
+```python
 with open(dst + '/cfg.json', 'wb') as f:
     f.write(str.encode(scfg))
 ```

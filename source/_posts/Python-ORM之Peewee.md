@@ -33,7 +33,8 @@ O(∩_∩)O哈哈~，英语都还给老师了，大致理解下。
 ## RetryOperationalError 实现了什么
 
 看下源码：
-```
+
+```python
 class RetryOperationalError(object):
     def execute_sql(self, sql, params=None, require_commit=True):
         try:
@@ -68,7 +69,8 @@ class RetryOperationalError(object):
 首先定义了一个 RetryOperationalError 类，类定义了一个execute_sql函数，该函数先去执行继承来的execute_sql函数，如果报错，先关闭当前连接，拿到新的cursor，之后仿照super的execute_Sql执行一次cursor.execute.
 
 了解到源码之后，我们就可以很方便的自己写一个类似的功能了。
-```
+
+```python
 from peewee import MySQLDatabase
 from peewee import OperationalError
 

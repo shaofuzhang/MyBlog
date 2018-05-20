@@ -5,14 +5,16 @@ tags: 写作
 categories: Python
 ---
 
-
 ## 继承
+
 在 Python 2 中，对 object 的继承需要显式地写为 FrenchDeck(object)；而在 Python 3 中，
 这个继承关系是默认的。
 
 ## magic methods
+
 特殊方法的存在是为了被 Python 解释器调用的
 https://docs.python.org/3/reference/datamodel.html 列出了83个特殊方法
+
 1. 实现了__getitem__对象可迭代，即iterable
 
 2.__contains__
@@ -49,14 +51,8 @@ x.__bool__() 的结果；如果不存在 __bool__ 方法，那么 bool(x) 会
 尝试调用 x.__len__()。若返回 0，则 bool 会返回 False；否则返回
 True。
 
-
-#### 跟运算符相关的特殊方法
-
-| 类别| 方法名| 
-- | :-: | -: 
-
-
 ## 序列
+
 Python 标准库用 C 实现了丰富的序列类型，列举如下。
 容器序列
 　　list、tuple 和 collections.deque 这些序列能存放不同类型的
@@ -80,7 +76,8 @@ memoryview。
 列表推导不会再有变量泄漏的问题
 Python 2.x 中，在列表推导中 for 关键词之后的赋值操作可能会影
 响列表推导上下文中的同名变量。
-```
+
+```python
 Python 2.7.6 (default, Mar 22 2014, 22:59:38)
 [GCC 4.8.2] on linux2
 Type "help", "copyright", "credits" or "license" for more information.
@@ -89,13 +86,15 @@ Type "help", "copyright", "credits" or "license" for more information.
 >>> x
 'C'
 ```
+
 列表推导、生成器表达式，以及同它们很相似的集合（set）推导
 和字典（dict）推导，在 Python 3 中都有了自己的局部作用域，就
 像函数似的。表达式内部的变量和赋值只在局部起作用，表达式的
 上下文里的同名变量还可以被正常引用，局部变量并不会影响到它
 们。
 这是Python 3 代码：
-```
+
+```python
 >>> x = 'ABC'
 >>> dummy = [ord(x) for x in x]
 >>> x 
@@ -109,7 +108,7 @@ Type "help", "copyright", "credits" or "license" for more information.
 生成器表达式的语法跟列表推导差不多，只不过把方括号换成圆括号而
 已。
 
-```
+```python
 >>> a=('%s %s' % (c, s) for c in colors for s in sizes)
 >>> a
 <generator object <genexpr> at 0x10b1f2150>
@@ -123,6 +122,7 @@ Type "help", "copyright", "credits" or "license" for more information.
 ()
 >>>
 ```
+
 这是因为生成器表达式背后遵守了迭代器协
 议，可以逐个地产出元素，而不是先建立一个完整的列表，然后再把这
 个列表传递到某个构造函数里。前面那种方式显然能够节省内存。
@@ -130,33 +130,12 @@ Type "help", "copyright", "credits" or "license" for more information.
 3.元组
 除了用作不可变的列表，它还可以用于没有字段名的记录。
 
-#### 拆包
 元组拆包形式就是平行赋值，也就是说把一个可迭代对象里
 的元素，一并赋值到由对应的变量组成的元组中
-```
+
+```python
 >>>c=a,b
 # c是tuple ，即先打包成tuple
 >>> a,b=c
 # 在从tuple解包
 ```
-_能表示前面n个变量
-```
->>> import os
->>> _, filename = os.path.split('/home/luciano/.ssh/idrsa.pub')
->>> filename
-'idrsa.pub'
-```
-
-#### * 
-在 Python 中，函数用 *args 来获取不确定数量的参数算是一种经典写
-法了。
-于是 Python 3 里，这个概念被扩展到了平行赋值中，在平行赋值中，* 前缀只能用在一个变量名前面，但是这个变量可以出
-现在赋值表达式的任意位置：
-```
->>> a, *body, c, d = range(5)
-```
-
-(1)函数赋值
-
-
-

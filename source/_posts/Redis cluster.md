@@ -1,6 +1,6 @@
 ---
 title: Redis cluster
-date: 2018-05-2 07:13:49
+date: 2018-08-23 21:13:49
 tags: Redis
 categories: Redis
 ---

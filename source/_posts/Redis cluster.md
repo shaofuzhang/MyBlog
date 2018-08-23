@@ -30,13 +30,13 @@ ubuntu 18.04.1 LTS
 wget http://download.redis.io/releases/redis-4.0.8.tar.gz
 ```
 
-2. 解压Redis
+1. 解压Redis
 
 ```shell
 tar -zxvf redis-4.0.8.tar.gz
 ```
 
-3. 编译安装
+1. 编译安装
 
 ``` shell
 cd redis-4.0.8
@@ -44,9 +44,9 @@ make
 make install
 ```
 
-4. 创建Redis实例
+1. 创建Redis实例
 
-.创建7000到7005文件夹
+    * 创建7000到7005文件夹
 
 ```shell
 cd ~
@@ -102,7 +102,7 @@ ps -ef |grep redis
 #看到6个进程即可
 ```
 
-5. 创建集群
+1. 创建集群
 
 .安装redis-trib
 

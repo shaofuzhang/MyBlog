@@ -36,7 +36,7 @@ wget http://download.redis.io/releases/redis-4.0.8.tar.gz
 tar -zxvf redis-4.0.8.tar.gz
 ```
 
-1. 编译安装
+2. 编译安装
 
 ``` shell
 cd redis-4.0.8
@@ -44,7 +44,7 @@ make
 make install
 ```
 
-1. 创建Redis实例
+3. 创建Redis实例
 
     * 创建7000到7005文件夹
 
@@ -102,7 +102,7 @@ ps -ef |grep redis
 #看到6个进程即可
 ```
 
-1. 创建集群
+4. 创建集群
 
 .安装redis-trib
 

@@ -139,3 +139,14 @@ Type "help", "copyright", "credits" or "license" for more information.
 >>> a,b=c
 # 在从tuple解包
 ```
+
+## 切片
+
+反转字符串,列表
+[::-1]
+
+```python
+>>> a="hello world"
+>>> print(a[::-1])
+tneduts a ma i
+```

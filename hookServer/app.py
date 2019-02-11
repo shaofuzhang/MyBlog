@@ -1,6 +1,6 @@
 import os
 import logging
-from flask import Flask
+from flask import Flask, Response, abort
 from logging.handlers import TimedRotatingFileHandler
 import json
 
@@ -46,6 +46,24 @@ sh_path = os.path.join(app.root_path[:app.root_path.rfind('/')], "publish.sh")
 def index():
     os.system(sh_path)
     return "ok"
+
+
+@app.route("/image/<image_name>")
+def get_image(image_name):
+    img_path = app.root_path + '/static/' + image_name
+    mdict = {
+        'jpeg': 'image/jpeg',
+        'jpg': 'image/jpeg',
+        'png': 'image/png',
+        'gif': 'image/gif'
+    }
+    mime = mdict[image_name[image_name.rfind(".") + 1:]]
+    if not os.path.exists(img_path):
+        # Res 是我自己定义的返回类，raw方法将数据组成字典返回
+        abort(404)
+    with open(img_path, 'rb') as f:
+        image = f.read()
+    return Response(image, mimetype=mime)
 
 
 if __name__ == '__main__':

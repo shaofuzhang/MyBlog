@@ -38,7 +38,7 @@ TCP位于传输层，提供可靠的字节流服务。
 ### DNS
 
 DNS 服务是和HTTP协议一样位于应用层的协议。它提供域名到IP地址之间的解析服务。DNS协议提供通过域名查找IP地址，或逆向从IP地址反查域名的服务。
-![DNS服务](http://p4djts42a.bkt.clouddn.com/DNS%E6%9C%8D%E5%8A%A1.png)
+![DNS服务](http://zhangshaofu.cn:6767/image/DNS服务.png)
 
 ### IP、TCP和DNS服务在HTTP协议通信过程流程
 

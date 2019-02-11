@@ -30,5 +30,3 @@ MongoSourceProducer和MongoTargetConsumer需要开发。在整个过程中，发
 
 ./bin/mongorestore -h 172.17.0.11 -u mongouser -p Aa12345678 -d mydb --authenticationDatabase admin  ./test
 ```
-
-
